@@ -3,7 +3,7 @@
 #include <boost/timer.hpp>
 
 void PrintVector(std::vector<size_t>& c, int k) {
-	for (int i = 1; i < k + 1; ++i) {
+	for (int i = 1; i <= k; ++i) {
 		std::cout << c[i] << " ";
 	}
 	std::cout << std::endl;
@@ -13,12 +13,14 @@ void PrintVector(std::vector<size_t>& c, int k) {
 int main() {
 	boost::timer t;
 	t.restart();
-	int n = 5;
+	int n = 10;
 	int k = 5;
 	std::vector<size_t> c(k+1);
 
 	c[0] = -1;
-	for (int i = 1; i < k; i++) { c[i] = i; }
+	for (int i = 1; i <= k; i++) { c[i] = i; }
+	//PrintVector(c, k);
+	std::cout << std::endl;
 
 	int j = 1;
 	while (j != 0) {
@@ -28,7 +30,7 @@ int main() {
 			j = j - 1;
 		}
 		c[j] = c[j] + 1;
-		for (int i = j + 1; i < k; ++i) {
+		for (int i = j + 1; i <= k; ++i) {
 			c[i] = c[i - 1] + 1;
 		}
 	} 

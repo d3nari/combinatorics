@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{ad33f38f-ec5d-4fab-b7a8-04072be8bd3f}</ProjectGuid>
-    <RootNamespace>combinationsInLexicographicOrder</RootNamespace>
+    <ProjectGuid>{5685c5e8-92b7-4667-92e2-b67ff3a3e67f}</ProjectGuid>
+    <RootNamespace>Allocation</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="combinationsInLexicographicOrder.cpp" />
+    <ClCompile Include="Allocation.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
