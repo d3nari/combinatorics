@@ -26,6 +26,7 @@ int main() {
 	while (j != 0) {
 		PrintVector(c, k);
 		j = k;
+		
 		while (c[j] == n - k + j) {
 			j = j - 1;
 		}

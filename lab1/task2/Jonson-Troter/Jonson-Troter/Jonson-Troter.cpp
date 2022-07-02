@@ -35,8 +35,8 @@ int main() {
 
 	
 	while (m != 1) {
-		//copy(n.begin(), n.end(), ostream_iterator<size_t>(cout, " "));
-		//cout << endl;
+		copy(n.begin(), n.end(), ostream_iterator<size_t>(cout, " "));
+		cout << endl;
 		m = x;
 		while (n[p[m] + d[m]] > m) {
 			d[m] = -d[m];

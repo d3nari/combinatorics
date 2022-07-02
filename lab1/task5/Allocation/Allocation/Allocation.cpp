@@ -14,7 +14,7 @@ void PrintVector(std::vector<size_t>& c, int k) {
 int main() {
 	boost::timer t;
 	t.restart();
-	int n = 3;
+	int n = 4;
 	int k = 3;
 	std::vector<size_t> c(n);
 	c[0] = -1;
